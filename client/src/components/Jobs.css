@@ -1,0 +1,88 @@
+/* PAGE */
+.jobs-page {
+  background: #020617;
+  color: white;
+  min-height: 100vh;
+  padding: 40px 60px; /* spacing from sides */
+}
+
+/* TITLE */
+.jobs-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* GRID (THIS FIXES YOUR GAP ISSUE) */
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px; /* 🔥 MAIN GAP FIX */
+}
+
+/* CARD */
+.job-card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.2);
+}
+
+/* TOP */
+.job-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-top h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* TAG */
+.tag {
+  background: linear-gradient(90deg, #22d3ee, #fb7185);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #020617;
+}
+
+/* DESCRIPTION */
+.job-desc {
+  margin: 12px 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* BOTTOM */
+.job-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* JOB COUNT */
+.jobs-count {
+  font-size: 13px;
+  color: #22d3ee;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.job-card:hover .arrow {
+  transform: translateX(6px);
+}
